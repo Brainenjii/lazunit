@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<CONFIG>
+  <Package Version="3">
+    <Name Value="lazunit"/>
+    <Author Value="Brainenjii"/>
+    <CompilerOptions>
+      <Version Value="9"/>
+      <SearchPaths>
+        <OtherUnitFiles Value="FormsUnit;Units"/>
+        <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)"/>
+      </SearchPaths>
+      <CodeGeneration>
+        <Optimizations>
+          <OptimizationLevel Value="2"/>
+        </Optimizations>
+      </CodeGeneration>
+      <Linking>
+        <Debugging>
+          <UseLineInfoUnit Value="False"/>
+        </Debugging>
+      </Linking>
+      <Other>
+        <CompilerPath Value="$(CompPath)"/>
+      </Other>
+    </CompilerOptions>
+    <Description Value="Makes FPCUnit more I of IDE"/>
+    <Version Minor="1"/>
+    <Files Count="5">
+      <Item1>
+        <Filename Value="FormsUnit/bformlunitmain.pas"/>
+        <UnitName Value="BFormLUnitMain"/>
+      </Item1>
+      <Item2>
+        <Filename Value="Units/bfpcunitrunnerunit.pas"/>
+        <UnitName Value="BFPCUnitRunnerUnit"/>
+      </Item2>
+      <Item3>
+        <Filename Value="FormsUnit/bformpreferencesunit.pas"/>
+        <UnitName Value="BFormPreferencesUnit"/>
+      </Item3>
+      <Item4>
+        <Filename Value="Units/btemplatesunit.pas"/>
+        <UnitName Value="BTemplatesUnit"/>
+      </Item4>
+      <Item5>
+        <Filename Value="Units/lazunitintf.pas"/>
+        <HasRegisterProc Value="True"/>
+        <UnitName Value="LazUnitIntf"/>
+      </Item5>
+    </Files>
+    <Type Value="DesignTime"/>
+    <RequiredPkgs Count="6">
+      <Item1>
+        <PackageName Value="FPCUnitTestRunner"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="fpcunitide"/>
+      </Item2>
+      <Item3>
+        <PackageName Value="fpcunitconsolerunner"/>
+      </Item3>
+      <Item4>
+        <PackageName Value="IDEIntf"/>
+      </Item4>
+      <Item5>
+        <PackageName Value="LCL"/>
+      </Item5>
+      <Item6>
+        <PackageName Value="FCL"/>
+        <MinVersion Major="1" Valid="True"/>
+      </Item6>
+    </RequiredPkgs>
+    <UsageOptions>
+      <UnitPath Value="$(PkgOutDir)"/>
+    </UsageOptions>
+    <PublishOptions>
+      <Version Value="2"/>
+    </PublishOptions>
+  </Package>
+</CONFIG>

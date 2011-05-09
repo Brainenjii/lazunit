@@ -1,0 +1,80 @@
+object LUnitMain: TLUnitMain
+  Left = 1040
+  Height = 588
+  Top = 104
+  Width = 385
+  Caption = 'LazUnit'
+  ClientHeight = 588
+  ClientWidth = 385
+  LCLVersion = '0.9.30.1'
+  Visible = True
+  object MemoTests: TMemo
+    Left = 0
+    Height = 552
+    Top = 36
+    Width = 385
+    Align = alClient
+    Lines.Strings = (
+      ''
+      ''
+      ''
+      ''
+      ''
+      ''
+      ''
+      ''
+      ''
+      ''
+      ''
+      ''
+      ''
+      ''
+      ''
+      ''
+      ''
+      ''
+    )
+    ScrollBars = ssAutoBoth
+    TabOrder = 0
+  end
+  object PanelToolBar: TPanel
+    Left = 0
+    Height = 36
+    Top = 0
+    Width = 385
+    Align = alTop
+    BevelOuter = bvNone
+    ClientHeight = 36
+    ClientWidth = 385
+    TabOrder = 1
+    object ButtonActions: TSpeedButton
+      Left = 2
+      Height = 32
+      Top = 2
+      Width = 30
+      Align = alLeft
+      BorderSpacing.Around = 2
+      NumGlyphs = 0
+      PopupMenu = PopupMenuActions
+    end
+    object ImageTests: TImage
+      Left = 34
+      Height = 32
+      Top = 2
+      Width = 349
+      Align = alClient
+      BorderSpacing.Around = 2
+    end
+  end
+  object PopupMenuActions: TPopupMenu
+    left = 40
+    top = 4
+    object MenuItem1: TMenuItem
+      Caption = 'New Item1'
+    end
+  end
+  object ActionList1: TActionList
+    left = 68
+    top = 4
+  end
+end
